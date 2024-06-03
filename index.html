@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Link the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Weather-App</title>
 </head>
+
 <body>
-    
+    <!-- Container for the weather app -->
+    <div class="container">
+        <!-- Search box for entering the city name -->
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter city name">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+        <!-- Not found section to show when city is not found -->
+        <div class="not-found">
+            <img src="img/img1.png">
+            <p>City Not Found</p>
+        </div>
+        <!-- Weather box to show the weather data -->
+        <div class="weather-box">
+            <img src="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+        <!-- Weather details section to show humidity and wind speed -->
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/f0c887fd00.js" crossorigin="anonymous"></script>
+    <!-- Index.js for handling the weather API -->
+    <script src="index.js"></script>
 </body>
+
 </html>
