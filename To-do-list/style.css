@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -5,25 +6,29 @@
     box-sizing: border-box;
 }
 
+/* Contenedor principal */
 .container {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(45deg, #49a09d, #5f2c82);
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px;
 }
 
+/* Aplicación de tareas */
 .todo-app {
     width: 100%;
     max-width: 540px;
     background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px ;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    margin: 100px auto 20px;
 }
 
+/* Título de la aplicación */
 .todo-app h2 {
     margin: 0;
     color: #5f2c82;
@@ -34,12 +39,13 @@
     margin-bottom: 20px;
 }
 
+/* Imagen del título */
 .todo-app h2 img {
     height: 30px;
-    margin: 0;
     margin-left: 10px;
 }
 
+/* Fila de tareas */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -51,6 +57,7 @@
     margin-bottom: 25px;
 }
 
+/* Campo de entrada de tareas */
 input {
     flex: 1;
     border: none;
@@ -60,13 +67,14 @@ input {
     font-weight: 14px;
 }
 
-input ::placeholder {	    
+/* Placeholder del campo de entrada */
+input::placeholder {
     color: #999;
 }
 
+/* Botón para agregar tareas */
 button {
     border: none;
-    max-width: 100%;
     outline: none;
     padding: 16px 50px;
     background: #5f2c82;
@@ -76,15 +84,17 @@ button {
     border-radius: 40px;
 }
 
+/* Listado de tareas */
 ul li {
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    padding: 12px 8px;
     user-select: none;
     cursor: pointer;
     position: relative;
 }
 
+/* Indicador de tarea completada */
 ul li::before {
     content: '';
     position: absolute;
@@ -98,15 +108,17 @@ ul li::before {
     left: 8px;
 }
 
+/* Tarea completada */
 ul li.checked {
-    color: #555;
     text-decoration: line-through;
 }
 
+/* Indicador de tarea completada (estilizado) */
 ul li.checked::before {
     background-image: url(images/checked.png);
 }
 
+/* Botón para eliminar tareas */
 ul li span {
     position: absolute;
     right: 0;
@@ -120,6 +132,7 @@ ul li span {
     border-radius: 50%;
 }
 
+/* Hover del botón de eliminación */
 ul li span:hover {
     background: #d4d5d5;
 }
