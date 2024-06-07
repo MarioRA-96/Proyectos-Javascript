@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/* Contenedor principal */
 .container {
     width: 100%;
     min-height: 100vh;
@@ -13,6 +15,7 @@
     padding-left: 10%;
 }
 
+/* Encabezado */
 .container h1 {
     display: flex;
     align-items: center;
@@ -20,20 +23,24 @@
     font-size: 50px;
 }
 
+/* Imagen del encabezado */
 .container h1 img {
     width: 60px;
     margin-right: 10px;
 }
 
+/* Botón */
 .container button img{
     width: 25px;
     margin-right: 8px;
 }
 
+/* Botón encabezado */
 .container h1 {
     margin-bottom: 20px;
 }
 
+/* Botón */
 .container button {
     cursor: pointer;
     display: flex;
@@ -48,6 +55,12 @@
     font-size: 16px;
 }
 
+/* Botón al pasar el cursor */
+.container button:hover {
+    background: #3c1754;
+}
+
+/* Caja de entrada */
 .input-box {
     position: relative;
     width: 100%;
@@ -61,6 +74,7 @@
     border-radius: 5px;
 }
 
+/* Imagen de caja de entrada */
 .input-box img {
     position: absolute;
     right: 15px;

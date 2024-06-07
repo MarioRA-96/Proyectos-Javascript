@@ -1,3 +1,4 @@
+<!-- Archivo HTML para la aplicación de notas. Este archivo contiene la estructura de la interfaz de la aplicación -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +9,24 @@
 </head>
 <body>
     <div class="container">
+        <!-- Contenedor para la interfaz de la aplicación Notes-App -->
         <h1><img src="images/notes.png">Notes App</h1>
-        <button><img src="images/edit.png" alt="">Add Note</button>
+        <!-- Encabezado de la aplicación Notes-App -->
+        <button class="btn"><img src="images/edit.png" alt="">Add Note</button>
+        <!-- Botón para agregar una nueva nota -->
         <div class="notes-container">
+            <!-- Contenedor para las notas -->
             <p contenteditable="true" class="input-box">
-                <img src="images/delete.png" alt="">
+                <!-- Caja de entrada para las notas -->
+                <img src="images/delete.png" >
+                <!-- Icono de eliminar notas -->
             </p>
         </div>
     </div>
+<script src="script.js"></script>
+<!-- Archivo JavaScript para la aplicación Notes-App -->
 </body>
 </html>
+
+
+
